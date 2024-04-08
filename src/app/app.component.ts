@@ -10,5 +10,5 @@ import { PaginaLoginComponent } from './pages/pagina-login/pagina-login.componen
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'SalvaPets-Web';
+  title = 'Login-Page';
 }

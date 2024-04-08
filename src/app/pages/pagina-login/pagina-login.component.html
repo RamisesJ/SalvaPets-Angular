@@ -2,8 +2,27 @@
 title="Entrar"
 primaryBtnText="Entrar"
 secondaryBtnText="Fazer cadastro"
+(submit)="submit()"
+(navigate)="navigate()"
+[disablePrimaryBtn]="!loginForm.valid"
 >
 <form [formGroup]="loginForm">
-
+    <app-primary-input
+        formControlName="email"
+        inputName="email"
+        type="email"
+        label="Email"
+        placeholder="johndoe@gmail.com">
+        <img src="../../../assets/png/mail.png" alt="email-icon">
+    </app-primary-input>
+    <app-primary-input
+        formControlName="password"
+        inputName="password"
+        type="password"
+        label="Your Password"
+    >
+    <img src="/assets/svg/password-icon.svg"/>
+</app-primary-input>
+<span>Forgot password?</span>
 </form>
 </app-login-layout>
