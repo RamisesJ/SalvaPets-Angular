@@ -1,10 +1,10 @@
 <app-login-layout
-title="Entrar"
-primaryBtnText="Entrar"
-secondaryBtnText="Fazer cadastro"
-(submit)="submit()"
-(navigate)="navigate()"
-[disablePrimaryBtn]="!loginForm.valid"
+    title="Entrar"
+    primaryBtnText="Entrar"
+    secondaryBtnText="Fazer cadastro"
+    (submit)="submit()"
+    (navigate)="navigate()"
+    [disablePrimaryBtn]="!loginForm.valid"
 >
 <form [formGroup]="loginForm">
     <app-primary-input
@@ -23,6 +23,6 @@ secondaryBtnText="Fazer cadastro"
     >
     <img src="/assets/svg/password-icon.svg"/>
 </app-primary-input>
-<span>Forgot password?</span>
+<span>Esqueceu a senha?</span>
 </form>
 </app-login-layout>

@@ -5,6 +5,7 @@ import { PrimaryInputComponent } from '../../components/primary-input/primary-in
 import { Router } from '@angular/router';
 import { LoginService } from '../../services/login.service';
 import { ToastrService } from 'ngx-toastr';
+import { LoginLayoutComponent } from '../../components/login-layout/login-layout.component';
 
 
 interface CadastroForm {
@@ -18,6 +19,7 @@ interface CadastroForm {
   selector: 'app-cadastro',
   standalone: true,
   imports: [
+    LoginLayoutComponent,
     PaginaLoginComponent,
     ReactiveFormsModule,
     PrimaryInputComponent

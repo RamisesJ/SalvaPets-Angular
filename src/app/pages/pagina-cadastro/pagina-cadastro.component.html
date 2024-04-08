@@ -1,10 +1,10 @@
-<app-pagina-login
-    title="Sign in and start today!t"
+<app-login-layout
+    title="Cadastre-se e adote agora!"
     primaryBtnText="Casdastrar"
     secondaryBtnText="Entrar"
     (submit)="submit()"
     (navigate)="navigate()"
-    
+    [disablePrimaryBtn]="!cadastroForm.valid"
 >
     <form [formGroup]="cadastroForm">
         <app-primary-input
@@ -12,7 +12,7 @@
             inputName="name"
             type="text"
             label="Your name"
-            placeholder="John Doe"
+            placeholder="Ramisés Jônata"
         >
             <img src="/assets/svg/email-icon.svg"/>
         </app-primary-input>
@@ -21,7 +21,7 @@
             inputName="email"
             type="email"
             label="Email"
-            placeholder="johndoe@gmail.com"
+            placeholder="ramisesjonata@gmail.com"
         >
             <img src="/assets/svg/email-icon.svg"/>
         </app-primary-input>
@@ -42,4 +42,4 @@
         <img src="/assets/svg/password-icon.svg"/>
     </app-primary-input>
     </form>
-</app-pagina-login>
+</app-login-layout>
